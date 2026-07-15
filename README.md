@@ -16,6 +16,24 @@ the file in any modern browser.
 - `.nojekyll` — tells GitHub Pages to serve the files as-is, skipping Jekyll processing.
 - `README.md` — this file.
 
+## Deploying to GitHub Pages (free)
+
+1. Create a public repository and upload these files to its root.
+2. In the repository's **Settings → Pages**, set the source to **Deploy from a branch**,
+   branch `main`, folder `/ (root)`, and save.
+3. The site goes live at `https://USERNAME.github.io/REPO/` within a minute or two.
+   (Naming the repo `USERNAME.github.io` serves it at the root instead.)
+
+## Deploying to Vercel (free Hobby tier — personal/non-commercial use)
+
+1. Sign up at vercel.com (the "Continue with GitHub" option is easiest).
+2. **Add New → Project → Import** this repository, then **Deploy**.
+3. The site goes live at `https://PROJECT.vercel.app`. Every commit auto-redeploys.
+
+Note: Vercel's free Hobby plan is for personal, non-commercial use. Adding anything
+commercial (ads, donations, paid features) would require a paid plan — verify against
+Vercel's current terms before adding such features.
+
 ## Custom domain (optional)
 
 Both hosts support a custom domain on their free tier. Buy a domain (~$10/year), then add
